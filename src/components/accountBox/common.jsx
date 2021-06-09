@@ -9,25 +9,29 @@ export const BoxContainer = styled.div`
 `;
 
 export const FormContainer = styled.form`
-  width: 100%;
+  /* width: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 2.5px rgba(15, 15, 15, 0.19);
+  border-radius: 10px; */
 `;
 
-export const MutedLink = styled.a`
+export const MutedLink = styled.span`
   font-size: 11px;
-  color: rgba(200, 200, 200, 0.8);
+  color: rgba(9,9,121,0.8);
   font-weight: 500;
-  text-decoration: none;
+  font-style: italic;
+  margin: 0;
 `;
 
 export const BoldLink = styled.a`
-  font-size: 11px;
-  color: rgb(241, 196, 15);
+  font-size: 20px;
+  color: rgba(9,9,121,0.8);
   font-weight: 500;
   text-decoration: none;
-  margin: 0 4px;
+  line-height: 100%;
+  position: relative;
+  top: 10%;
 `;
 
 export const Input = styled.input`
@@ -36,9 +40,11 @@ export const Input = styled.input`
   outline: none;
   border: 1px solid rgba(200, 200, 200, 0.3);
   padding: 0px 10px;
+  border-radius: 5px;
   border-bottom: 1.4px solid transparent;
   transition: all 200ms ease-in-out;
   font-size: 12px;
+  margin-bottom: 2%;
 
   &::placeholder {
     color: rgba(200, 200, 200, 1);
@@ -50,13 +56,13 @@ export const Input = styled.input`
 
   &:focus {
     outline: none;
-    border-bottom: 2px solid rgb(241, 196, 15);
+    border-bottom: 2px solid rgba(9,9,121,0.6);
   }
 `;
 
 export const SubmitButton = styled.button`
   width: 100%;
-  padding: 11px 40%;
+  padding: 11px;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
@@ -64,14 +70,15 @@ export const SubmitButton = styled.button`
   border-radius: 100px 100px 100px 100px;
   cursor: pointer;
   transition: all, 240ms ease-in-out;
-  background: rgb(241, 196, 15);
+  background: rgb(2,0,36);
   background: linear-gradient(
-    58deg,
-    rgba(241, 196, 15, 1) 20%,
-    rgba(243, 172, 18, 1) 100%
+    90deg,
+    rgba(9,9,121,1) 50%,
+    rgba(0,212,255,1) 100%
   );
 
   &:hover {
     filter: brightness(1.03);
   }
 `;
+
