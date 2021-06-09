@@ -16,8 +16,8 @@ const AppContainer = styled.div`
   justify-content: center;
 `;
 const BoxContainer = styled.div`
-  width: 300px;
-  min-height: 550px;
+  width: 320px;
+  min-height: 568px;
   display: flex;
   flex-direction: column;
   border-radius: 19px;
